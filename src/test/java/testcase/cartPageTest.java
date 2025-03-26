@@ -182,14 +182,10 @@ public class cartPageTest extends TestBase
 		Reporter.log("return to product"+actURL);
 	}
 	@AfterMethod(alwaysRun = true)
-	public void closeBrowser(ITestResult it) throws InterruptedException, IOException
+	public void closeBrowser () throws InterruptedException
 	{
 
-		if(it.FAILURE==it.getStatus())
-		{
-			Screenshot.sc(it.getName());
-			
-		}
+	
 		Thread.sleep(5000);
 		driver.close();
 	}
