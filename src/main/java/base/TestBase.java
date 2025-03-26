@@ -19,7 +19,7 @@ public class TestBase
 	public void initialiazation() throws IOException
 	{
 		String browser=ReadData.readPropertyFile("Brouser");
-		if(browser.equals("crome"))
+		if(browser.equals("chrome"))
 		{
 			WebDriverManager.chromedriver();
 
